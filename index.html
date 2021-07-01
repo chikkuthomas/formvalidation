@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" contnt="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <title>Welcome to Kerala Tourism - Create Account</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="./script.js" defer></script>
+
+  <style>
+    body {
+      background: linear-gradient(to left, #74ebd5, #9face6);
+    }
+
+    .border {
+      width: 500px;
+      border-radius: 5%;
+      border-color: mintcream 1px;
+      background: linear-gradient(to left, #ece4f1, #f8f7ed);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background: linear-gradient(to left, #bf74eb, #e4d583);
+      border: none;
+      border-radius: 15%;
+      width: 100px;
+      height: 40px;
+      box-shadow: #bf74eb;
+    }
+
+    small {
+      font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+    }
+
+    #strength {
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 800;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="row container text-center">
+    <div class="title mt-2">
+      <h2>Sign up</h2>
+    </div>
+    <div class=" border mx-auto mt-2 p-3">
+
+      <form action="https://www.keralatourism.org/"  autocomplete="off">
+        <input type="text" placeholder="User Name" id="name" class="form-control mt-2 mb-2">
+        <small id="name_error"></small>
+
+        <input type="text" placeholder="Email Id" id="email" class="form-control mb-2">
+        <small id="email_error"></small>
+
+        <input type="text" placeholder="Phone Number" id="phone" class="form-control mb-2">
+        <small id="phone_error"></small>
+
+        <input type="text" onkeyup=" return passwordChanged();" placeholder="password" id="password"
+          class="form-control mb-2">
+        <span id="strength"></span><br>
+
+        <small id="password_error"></small>
+
+
+        <input type="password" placeholder="Confirm Password" id="conpass" class="form-control mb-2">
+        <small id="con_error"></small><br>
+
+       <button type="submit" onclick="return validateSignup()" class="sub">Submit</button>
+
+
+
+
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
